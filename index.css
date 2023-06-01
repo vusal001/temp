@@ -1,0 +1,90 @@
+
+body{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    margin: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    box-shadow: -2px 1px 9px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: -2px 1px 9px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: -2px 1px 9px 0px rgba(0,0,0,0.75);
+    border-radius: 30px;
+    padding: 15px 30px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+
+.menu a{
+    margin: 10px;
+    font-size: 13px;
+}
+
+.menu a{
+    text-decoration: none;
+    color: black;
+    
+    border-bottom: 1px solid transparent;
+    padding-bottom: 1px;
+}
+
+.menu a:hover{  
+    border-color: red;
+    color: red;
+    padding-bottom: 4px;
+
+}
+
+.additional i:hover{
+    color: red;
+    cursor: pointer;
+}
+
+.home{
+    margin-top: -89.2;
+    padding: 0;
+    
+    height: 100vh;
+    background: url('img/11.jpg') no-repeat;
+    background-size: cover;
+    
+}
+
+.box-head img{
+    width: 100px;
+    height: 150px;
+    transition: 0.5s all ease-in;
+}
+
+.box-head img:hover{
+    width: 110px;
+    height: 160px;
+}
+
+
+.shadow{
+    
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0px 40px;
+    background-color: rgba(0,0,0,0.6);
+}
+
+.title h2{
+    font-size: 70px;
+}
+.home .title{
+    width: 400px;
+    color: white;
+}
+
+.restoranmenu{
+    background-color: wheat;
+    height: 100vh;
+}
+

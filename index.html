@@ -1,0 +1,73 @@
+<html>
+<head>
+    <title>Resoran sayti</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+
+    <header class="header" >
+        <div class="logo">
+            <i class="fa-solid fa-blog"></i>
+        </div>
+
+        <nav class="menu">
+            <a href="#section1">Əsas səhifə</a>
+            <a href="#section2">Menyu</a>
+            <a href="#">Filiallar</a>
+            <a href="#">Bizimlə Əlaqə</a>
+            <a href="#">Bloqlar</a>
+        </nav>
+
+        <div class="additional">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+
+
+    </header>
+
+    <section class="home" id="section1">
+    <div class="shadow">
+        <div class="title">
+            <h2>Restoran basligi</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia debitis dicta sunt deserunt nesciunt repellendus facere alias obcaecati cupiditate odio, quasi dolorum omnis vero laboriosam eos provident, aliquam, fugiat eligendi!</p>
+        </div>
+    </div>
+    </section>
+
+
+    <section class="restoranmenu" id="section2">
+        <h1>Restoran <span>menyusu</span></h1>
+        <div class="box">
+            <div class="box-head">
+                <img src="img/11.jpg" alt="menu">
+                <span class="menu-cat">PIZZA</span>
+                <h3>Sosiskali pizza</h3>
+                
+            </div>
+        </div>
+    </section>
+
+
+
+</body>
+
+<script>
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        
+        const target = document.querySelector(this.getAttribute('href'));
+        const topOffset = target.getBoundingClientRect().top + window.pageYOffset;
+        
+        window.scrollTo({
+          top: topOffset,
+          behavior: 'smooth'
+        });
+      });
+    });
+</script>
+<script src="https://kit.fontawesome.com/d6b4644e7b.js" crossorigin="anonymous"></script>
+
+</html>

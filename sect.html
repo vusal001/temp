@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>One-Page Menu</title>
+  <style>
+    /* Styling for the menu */
+    ul.menu {
+      position: fixed;
+      top: 0;
+      left: 0;
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+      background-color: #f2f2f2;
+    }
+    
+    ul.menu li {
+      display: inline-block;
+      margin-right: 10px;
+    }
+    
+    ul.menu li a {
+      display: block;
+      padding: 10px;
+      text-decoration: none;
+      color: #333;
+    }
+    
+    /* Styling for the sections */
+    section {
+      height: 100vh;
+      padding: 50px;
+    }
+    
+    section:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+    
+    section:nth-child(odd) {
+      background-color: #ccc;
+    }
+  </style>
+</head>
+<body>
+  <ul class="menu">
+    <li><a href="#section1">Section 1</a></li>
+    <li><a href="#section2">Section 2</a></li>
+    <li><a href="#section3">Section 3</a></li>
+    <li><a href="#section4">Section 4</a></li>
+  </ul>
+
+  <section id="section1">
+    <h2>Section 1</h2>
+    <p>This is the content of section 1.</p>
+  </section>
+
+  <section id="section2">
+    <h2>Section 2</h2>
+    <p>This is the content of section 2.</p>
+  </section>
+
+  <section id="section3">
+    <h2>Section 3</h2>
+    <p>This is the content of section 3.</p>
+  </section>
+
+  <section id="section4">
+    <h2>Section 4</h2>
+    <p>This is the content of section 4.</p>
+  </section>
+
+  <script>
+    // Smooth scrolling to section
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        
+        const target = document.querySelector(this.getAttribute('href'));
+        const topOffset = target.getBoundingClientRect().top + window.pageYOffset;
+        
+        window.scrollTo({
+          top: topOffset,
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+</body>
+</html>

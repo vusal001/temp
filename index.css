@@ -1,7 +1,19 @@
 
+html::-webkit-scrollbar{
+    background-color: white;
+    width: 8px;
+}
+
+html::-webkit-scrollbar-thumb{
+    background-color: red;
+    border-radius: 30px;
+}
+
 body{
     margin: 0;
+    font-family: 'Geologica', sans-serif;
     padding: 0;
+    height: 2500px;
 }
 .header{
     position: sticky;
@@ -83,8 +95,115 @@ body{
     color: white;
 }
 
-.restoranmenu{
-    background-color: wheat;
-    height: 100vh;
+
+section{
+    margin: auto;
+    padding: 0 105px;
+    margin-top: 20px;
+    max-width: 1800px;
+    
+}
+.sectitle{
+    font-size: 30px;
+    font-weight: bold;
+}
+.sectitle span{
+    color: red;
+}
+.menu_item_cont{
+    padding: 10px 20px;
+}
+
+.sec_items{
+    display: flex;
+    flex-wrap: nowrap;
+    
+
+}
+
+
+.sec_items .menu_item:first-child{
+    margin-left: 0 !important;
+}
+.menu_item{
+    margin-left: 15px;
+
+    flex-grow: 1;
+    background-color: white;
+    box-shadow: -2px -1px 7px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: -2px -1px 7px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: -2px -1px 7px 0px rgba(0,0,0,0.75);
+}
+
+
+.menu_item_img{
+    height: 250px;
+    object-fit: contain;
+}
+
+.menu_item_img img{
+    object-fit: cover;
+}
+
+.menu_title{
+    font-size: 20px;
+}
+
+
+.menu_btn{
+    
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.menu_btn button{
+    padding: 10px 20px;
+    font-size: 20px;
+    background-color: black;
+    border-color: black;
+    color: white;
+    border-radius: 30px;
+}
+
+.menu_btn button:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+.filial_item{
+    background-color: white;
+    box-shadow: -2px -1px 7px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: -2px -1px 7px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: -2px -1px 7px 0px rgba(0,0,0,0.75);
+    flex: 1;
+    max-width: 400px;
+}
+
+.filial_img{
+    height: 330px;
+}
+
+.filial_img img{
+    width: 100%;
+    height: 100%;
+
+}
+
+.filial_title{
+    font-size: 30px;
+    font-weight: bold;
+    margin: 10px;
+}
+
+.filial_text{
+    padding: 15px;
+    display: flex;
+    font-size: 18px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.filial_text i{
+    margin-right: 5px;
 }
 

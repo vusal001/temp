@@ -213,12 +213,37 @@ section{
 
 
 
-
-
-.map{
-    width: 400px;
-    height: 600px;
+.contact_title{
+    font-size: 30px;
+    text-align: center;
+    padding: 20px;
+    font-weight: bold;
 }
 
+.contact_point{
+    display: flex;
+}
 
+.map_content{
+  
+    width: 50%;
+    height: 400px;
+}
 
+.contact_texts{
+    width: 50%;
+    padding: 20px;
+}
+
+.contact_item div:first-child{
+    font-size: 20px;
+    opacity: 0.5;
+}
+
+.contact_item {
+    padding: 10px;
+}
+.contact_item div:nth-child(2){
+    font-size: 30px;
+    opacity: 1;
+}

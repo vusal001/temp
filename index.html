@@ -1,6 +1,8 @@
 <html>
 <head>
     <title>Resoran sayti</title>
+    <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <link rel="stylesheet" href="index.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -41,7 +43,7 @@
     </div>
 
 
-   <section class="rest_menu">
+   <section class="rest_menu" id="section2">
         <div class="sectitle">
             Restoran <span>menyusu</span> 
         </div>
@@ -49,9 +51,16 @@
         <div class="sec_items">
 
             <div class="menu_item">
+
+
+
                 <div class="menu_item_img">
                     <img src="img/12.jpg" alt="" width="100%" height="100%">
                 </div>
+
+
+
+
                 <div class="menu_item_cont">
                     <div class="menu_cat">
                         <p>pizza</p>
@@ -150,14 +159,135 @@
    <section class="rest_filials">
 
     <div class="sectitle">
-        Restoran <span>menyusu</span> 
+        Restoran <span>filiallar</span> 
     </div>
     <hr>
     <div class="sec_items">
             <div class="filial_item">
 
-                <div class="filial_img">
-                    <img src="img/13.jpg" alt="">
+                <div class="swiper mySwiper" style="height: 400px;">
+                    <div class="swiper-wrapper">
+
+                            <div class="swiper-slide filial_img">
+                                <img src="img/13.jpg" alt="">
+                            </div>
+
+                            <div class="swiper-slide filial_img">
+                                <img src="img/13.jpg" alt="">
+                            </div>
+
+                            <div class="swiper-slide filial_img">
+                                <img src="img/13.jpg" alt="">
+                            </div>
+                     </div>
+
+                     <div class="swiper-button-next"></div>
+                     <div class="swiper-button-prev"></div>
+                     <div class="swiper-pagination"></div>
+
+
+                </div>
+
+                <div class="filial_cont">
+                    <div class="filial_title">
+                        Nerimanov filialı
+                    </div>
+
+                    <div class="filial_text">
+                        <div class="text">
+                            <i class="fa-solid fa-location-dot"></i> <span>N.Nerimanov 139 A kuc</span>
+                        </div>
+
+                        <div class="text">
+                            <i class="fa-solid fa-cube"></i><span>1200 m2</span>
+                        </div>
+
+                        <div class="text">
+                            <i class="fa-solid fa-bacon"></i><span>Terras</span>
+                        </div>
+
+                        <div class="text">
+                            <i class="fa-solid fa-wifi"></i><span>Wifi</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="filial_item">
+
+                <div class="swiper mySwiper" style="height: 400px;">
+                    <div class="swiper-wrapper">
+
+                            <div class="swiper-slide filial_img">
+                                <img src="img/13.jpg" alt="">
+                            </div>
+
+                            <div class="swiper-slide filial_img">
+                                <img src="img/13.jpg" alt="">
+                            </div>
+
+                            <div class="swiper-slide filial_img">
+                                <img src="img/13.jpg" alt="">
+                            </div>
+                     </div>
+
+                     <div class="swiper-button-next"></div>
+                     <div class="swiper-button-prev"></div>
+                     <div class="swiper-pagination"></div>
+
+
+                </div>
+
+                <div class="filial_cont">
+                    <div class="filial_title">
+                        Nerimanov filialı
+                    </div>
+
+                    <div class="filial_text">
+                        <div class="text">
+                            <i class="fa-solid fa-location-dot"></i> <span>N.Nerimanov 139 A kuc</span>
+                        </div>
+
+                        <div class="text">
+                            <i class="fa-solid fa-cube"></i><span>1200 m2</span>
+                        </div>
+
+                        <div class="text">
+                            <i class="fa-solid fa-bacon"></i><span>Terras</span>
+                        </div>
+
+                        <div class="text">
+                            <i class="fa-solid fa-wifi"></i><span>Wifi</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="filial_item">
+
+                <div class="swiper mySwiper" style="height: 400px;">
+                    <div class="swiper-wrapper">
+
+                            <div class="swiper-slide filial_img">
+                                <img src="img/13.jpg" alt="">
+                            </div>
+
+                            <div class="swiper-slide filial_img">
+                                <img src="img/13.jpg" alt="">
+                            </div>
+
+                            <div class="swiper-slide filial_img">
+                                <img src="img/13.jpg" alt="">
+                            </div>
+                     </div>
+
+                     <div class="swiper-button-next"></div>
+                     <div class="swiper-button-prev"></div>
+                     <div class="swiper-pagination"></div>
+
+
                 </div>
 
                 <div class="filial_cont">
@@ -189,25 +319,32 @@
     
     </div>
 
+
+    
+
+  
+
    </section>
 
 </body>
 
-<script>
-      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        
-        const target = document.querySelector(this.getAttribute('href'));
-        const topOffset = target.getBoundingClientRect().top + window.pageYOffset;
-        
-        window.scrollTo({
-          top: topOffset,
-          behavior: 'smooth'
-        });
-      });
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      pagination: {
+        el: ".swiper-pagination",
+        type: "fraction",
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
     });
-</script>
+  </script>
+
+
 <script src="https://kit.fontawesome.com/d6b4644e7b.js" crossorigin="anonymous"></script>
 
 </html>
